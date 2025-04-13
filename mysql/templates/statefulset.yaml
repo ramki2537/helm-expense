@@ -10,6 +10,7 @@ spec:
       project: expense
       tier: db # has to match .spec.template.metadata.labels
   serviceName: "mysql-headless"
+
   replicas: {{ .Values.mysql.replicas }} # by default is 1
   minReadySeconds: 10 # by default is 0
   template:
