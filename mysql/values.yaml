@@ -1,5 +1,4 @@
-deployment:
+statefulset:
+  version: 1.0.0
+  storage: 1Gi
   replicas: 3
-  imageVersion: stable-perl
-service:
-  nodePort: 30007
